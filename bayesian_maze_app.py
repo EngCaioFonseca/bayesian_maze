@@ -8,8 +8,8 @@ import random
 st.title('Spiking Neural Network Simulation')
 
 # Parameters
-num_neurons = st.sidebar.number_input('Number of Neurons', min_value=10, max_value=200, value=100)
-learning_rate = st.sidebar.slider('Learning Rate', min_value=0.0001, max_value=0.01, value=0.001, step=0.0001)
+num_neurons = st.sidebar.number_input('Number of Neurons', min_value=10, max_value=1000, value=100)
+learning_rate = st.sidebar.slider('Learning Rate', min_value=0.001, max_value=0.1, value=0.01, step=0.0001)
 simulation_time = st.sidebar.slider('Simulation Time (ms)', min_value=10, max_value=1000, value=100) * ms
 time_step = 0.1*ms
 
